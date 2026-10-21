@@ -1,5 +1,5 @@
 # Single-Cell RNA-Seq Analysis Pipeline
-
+![Single-Cell RNA-Seq Analysis Pipeline](1.png)
 A collection of six R scripts covering the standard scRNA-seq workflow: doublet
 filtering, integration (Harmony & Seurat CCA), cluster identity & differential
 expression, pseudo-bulk DESeq2, and the canonical Seurat pipeline.

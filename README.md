@@ -104,3 +104,22 @@ Canonical Seurat pipeline: raw counts → QC → clustering → UMAP.
 ---
 
 ## Repository Structure
+
+---
+
+## Requirements
+
+```r
+# CRAN
+install.packages(c("tidyverse", "ggplot2", "gridExtra", "harmony"))
+
+# Bioconductor
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install(c("DESeq2", "ExperimentHub"))
+
+# Seurat ecosystem
+install.packages(c("Seurat", "SeuratData", "DoubletFinder"))
+
+# SeuratData datasets (install once)
+library(SeuratData); InstallData("ifnb")
